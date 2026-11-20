@@ -1,0 +1,23 @@
+name: paris_product_videos
+title: Paris Product Videos
+description: Make a 24 second vertical Paris style product video with an on-camera host in a real industry matched warehouse, paired variants and a real demo.
+category: Media
+include_in_prompt: false
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - ~/workspace/your_files/master-prompt-video-kieu-paris.md
+  - message:6404699e-861e-4515-9218-4268c9e3da26
+  - message:bf0ec213-3be2-4803-b155-c702d50cf8b8
+  - message:1fa05270-8962-445f-835b-72526ac0b3a5
+  - message:929ea679-25d0-4c09-8203-f1f05264635c
+  measurement:
+    proxy_metric_id: objective_success_rate
+    success_criterion: Paris style video tasks over 14 days show fewer repeat user corrections about format, host, warehouse match, scene repeats or dialogue repeats than the pre-install baseline, with no Paris request delivered as a 20 second POV hand-only video
+    window_days: 14
+  rationale: 'The Paris format was used for three videos on 2026-11-17, starting from a 24.13 second detergent video, and was documented in ~/workspace/your_files/master-prompt-video-kieu-paris.md with a dedicated side chat, but it lives only in that file and chat. Skill search finds no Paris skill, only pov_product_review_videos, which prescribes the opposite format: 20 seconds, hand-only POV and a clean store or studio background. A future Paris request discovered through skill search would therefore fall back to the wrong template. The current POV skill already contains the sequential joining, crossfade, dual reference, physics and scale fixes from 2026-11-17, so no POV update is proposed. The Paris skill codifies the distinct reusable method, including the research-first rule, the KOC rule, the fixed host, the industry-matched warehouse per product, paired variants, real demos and the sequential scene joining that fixes the parallel-generation repeat fault.'
+  needs_review: false
+  review_after: 2026-12-02T00:43:26.693644+00:00
+  reviewed_at: 2026-11-18T00:43:26.693644+00:00
+  run_id: sirun_d1d359dca0444cf8a47584cad7915542

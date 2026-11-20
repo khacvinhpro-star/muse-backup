@@ -1,0 +1,28 @@
+name: pov_product_review_videos
+title: POV Product Review Videos
+description: Make a 20 second vertical POV product review video that keeps the product identical to its photo, with a clean changed background and a matching review voiceover.
+category: Media
+include_in_prompt: false
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - message:c613be4c-a658-4278-b8d8-116dabb5df84
+  - message:5ab58ddf-4772-4f34-ba6c-554fff46b38e
+  - message:31f245cf-1b6b-440c-aa98-de07041beec1
+  - message:3b08b689-719a-4c96-9ddd-0541ca8ba68b
+  - message:ec837eba-3f17-4d25-bb52-80e983255f32
+  - message:c96ce7b1-2f50-43dd-99e1-c44d9c532aba
+  - message:d2d62c60-4a9d-44c1-a939-47692d3fe3c9
+  - message:a417b332-486d-43bb-88b-81-38588c3a8dcc
+  - runtime-child:aac08d33-9498-5c16-8545-4d9ec6354bcc
+  - runtime-child:95e30edd-4d97-561c-b914-883665c4588b
+  measurement:
+    proxy_metric_id: objective_success_rate
+    success_criterion: POV product video tasks over 14 days show fewer repeat user corrections about length, product fidelity, voiceover, physics or scale than the pre-install baseline, with no incomplete segment reported as a finished 20 second video
+    window_days: 14
+  needs_review: false
+  rationale: The same POV template was corrected repeatedly in one day. The first video was 10 seconds not 20 seconds, the assistant guessed the videos had no voiceover when they had spoken review, the charger changed structure after 10 seconds and its battery did not fit snugly or touch the top contact, and the 2.2kg detergent packs looked too small. A second segment also failed and left a video at 10 seconds. Skill search found no POV product review skill, only avatar dance videos and podcast generation, and the Runway connector covers generation mechanics not this template, so a new reusable skill is the fix. The deterministic candidate about memory handoff suppression is a trigger cadence matter, not a reusable skill, so this proposal does not address it.
+  review_after: 2026-12-01T07:38:10.332984+00:00
+  reviewed_at: 2026-11-17T07:38:10.332984+00:00
+  run_id: sirun_3fbafc2a622f4519a3def91eff2b1c02
